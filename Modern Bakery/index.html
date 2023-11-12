@@ -348,5 +348,41 @@
     </div>
   </div>
 </footer>
+                <div class="backdrop is-hidden">
+  <div class="modal">
+    <button class="modal__btn-close modal-btn-close" type="button">
+      <svg width="24" height="24">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal__title">Request a Callback</h2>
+    <p class="modal__text">
+      Leave your details, and our specialist will get in touch with you!
+    </p>
+    <form name="modal-form" autocomplete="off">
+      <div class="modal__form-field input">
+        <label class="input__label visually-hidden" for="user-name">Name</label>
+        <input class="input__control" type="text" name="user-name" id="user-name" placeholder="Name" required />
+      </div>
+
+      <div class="modal__form-field input">
+        <label class="input__label visually-hidden" for="user-tel">Phone</label>
+        <input class="input__control" type="tel" name="user-tel" id="user-tel" placeholder="Phone" pattern="^\+[0-9]{12}" required />
+      </div>
+
+      <div class="modal__form-field input">
+        <label class="input__label visually-hidden" for="user-email">Email</label>
+        <input class="input__control" type="email" name="user-email" id="user-email" placeholder="Email" required />
+      </div>
+
+      <button class="modal__button button" type="submit">Request a Callback</button>
+      <p class="form-terms">
+        By clicking the button, I agree to the
+        <a class="form-terms__link" href="#">privacy policy</a>
+      </p>
+    </form>
+  </div>
+</div>
+
   </body>
 </html>
